@@ -139,7 +139,7 @@ def parseInfo( args ){
     def parsedMap = args.input
 
     // specify config defaults
-    def defaultMap = initDefaults( "$workflow.projectDir/components/defaults/ENTRY_INPUT.json" )
+    def defaultMap = initDefaults( "$workflow.projectDir/pipeline/components/defaults/ENTRY_INPUT.json" )
 
     // initialise empty config map
     def infoMap = [:]
@@ -392,7 +392,7 @@ def parseConfig( args ){
         ?: [:]
 
     // specify config defaults
-    def defaultMap = initDefaults( "$workflow.projectDir/components/defaults/ENTRY_LEAF.json" )
+    def defaultMap = initDefaults( "$workflow.projectDir/pipeline/components/defaults/ENTRY_LEAF.json" )
     
     // add default alises
     defaultMap['LABEL'].putAt("ALIASES", initAlias())
@@ -443,7 +443,7 @@ def parseSubsets( args ){
     def groupList = args.grouped
 
     // specify config defaults
-    def defaultMap = initDefaults( "$workflow.projectDir/components/defaults/ENTRY_BATCH.json" )
+    def defaultMap = initDefaults( "$workflow.projectDir/pipeline/components/defaults/ENTRY_BATCH.json" )
 
     // initialise empty config map
     def batchMap = [:]

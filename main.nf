@@ -18,13 +18,13 @@ params.importMap = [ 'subworkflows', 'functions' ]
 
         .collectEntries { subDir -> 
 
-                def subPath = [ workflow.projectDir, 'components', subDir, ]
+                def subPath = [ workflow.projectDir, 'pipeline', 'components', subDir, ]
                 
                         .join('/')
                 
                 return [ (subDir) : subPath ] }
 
-
+println(">>>$params.importMap.functions/core/Utils")
 include { 
     parseSupplementary as parseSupplementary;
     viewMeta as viewMeta;
