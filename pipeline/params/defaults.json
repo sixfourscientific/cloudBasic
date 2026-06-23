@@ -1,0 +1,74 @@
+{
+  "DEBUG": true,
+  "PUBLISH": false,
+  "INPUT": {
+    "MAIN": {
+      "INFO": null,
+      "TYPE": null,
+      "DETAILED": false,
+      "ID_FIELD": null,
+      "UNIQUE": [],
+      "EXISTS": [],
+      "CONTENTS": [],
+      "NESTED": {},
+      "EXTENSIONS": {},
+      "GUNZIPPED": false
+    }
+  },
+  "SOFTWARE1": {
+    "COMMAND1": {
+      "BRANCH1": {
+        "CONFIG": {
+          "VERSION": [],
+          "LABEL": {
+            "INCLUDE": true,
+            "MODULE": null,
+            "PRE": null,
+            "POST": null,
+            "ALIASES": {}
+          },
+          "ARGS": {
+            "CORE": {},
+            "SWEEP": "/Users/matt/Developer/GitHub/cloudBasic/pipeline/inputs/config/SweepInfo_Software1_Command1_Branch1.tsv"
+          }
+        }
+      },
+      "BRANCH2": {
+        "CONFIG": {
+          "VERSION": [],
+          "LABEL": {
+            "INCLUDE": true,
+            "MODULE": null,
+            "PRE": null,
+            "POST": null,
+            "ALIASES": {}
+          },
+          "ARGS": {
+            "CORE": {},
+            "SWEEP": "/Users/matt/Developer/GitHub/cloudBasic/pipeline/inputs/config/SweepInfo_Software1_Command1_Branch2.tsv"
+          }
+        }
+      }
+    }
+  },
+  "SOFTWARE2": {
+    "COMMAND2": {
+      "BRANCH2": {
+        "CONFIG": {
+          "VERSION": [],
+          "LABEL": {
+            "INCLUDE": true,
+            "MODULE": null,
+            "PRE": null,
+            "POST": null,
+            "ALIASES": {}
+          },
+          "ARGS": {
+            "CORE": {},
+            "SWEEP": "/Users/matt/Developer/GitHub/cloudBasic/pipeline/inputs/config/SweepInfo_Software2_Command2_Branch2.tsv"
+          }
+        }
+      }
+    }
+  }
+}
