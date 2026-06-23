@@ -24,7 +24,6 @@ params.importMap = [ 'subworkflows', 'functions' ]
                 
                 return [ (subDir) : subPath ] }
 
-println(">>>$params.importMap.functions/core/Utils")
 include { 
     parseSupplementary as parseSupplementary;
     viewMeta as viewMeta;
